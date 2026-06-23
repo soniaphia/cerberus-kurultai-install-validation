@@ -23,7 +23,6 @@ PASS  QMD collection/index/embed/search: 6 files, 8 vectors, search result retur
 PASS  Telegram dependency and offline adapter/configuration preflight: python-telegram-bot 22.6
 PASS  Cerberus Telegram identity validation, polling connection, outbound message, inbound /status, and response
 PASS  Feature audit data validation: 333 unique complete stories, 18 defects, 22 test runs
-
-BLOCKED  Canonical XLSX export/render: loader-provided @oai/artifact-tool runtime unavailable
+PASS  Canonical XLSX export, structural validation, formula inspection, Quick Look render, and secret scan
 
 PENDING  Private/external skill and cron-script reconciliation

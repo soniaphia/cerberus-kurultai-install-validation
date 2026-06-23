@@ -23,7 +23,8 @@ Sanitized validation receipts for a local installation of [Kurultai](https://git
 - QMD v2.5.3 is installed. The `brain` collection contains 6 indexed Markdown files and 8 embedded chunks; a collection-scoped search passed.
 - Hermes's Telegram dependency (`python-telegram-bot` 22.6) is installed and the adapter/configuration preflight passes with secure DM pairing.
 - The Cerberus gateway is installed as a macOS LaunchAgent and connected to Telegram in polling mode. Bot identity validation, an outbound smoke message, and an allowlisted inbound `/status` response all passed.
-- The feature-audit workbook builder derives and validates 333 complete user stories from executable code and public manifests. XLSX export remains blocked until the mandated `@oai/artifact-tool` runtime is exposed.
+- The canonical [feature-status workbook](kurultai-feature-status.xlsx) tracks 333 complete user stories, 22 test runs, and 18 fixed defects derived from executable code and public manifests. It includes a formula-driven dashboard, filters, status validation, and conditional formatting.
+- Google Sheets publication was attempted, but this account is currently over its 100 GB Drive quota; the sanitized XLSX is published here instead.
 - No cron jobs were created from missing private scripts.
 
 ## Human-gated or pending
