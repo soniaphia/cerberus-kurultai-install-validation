@@ -17,5 +17,7 @@ Post-apply verification:
 - Native Kanban create/complete smoke test passed.
 - 71 bundled skills installed; missing Kurultai private/external skills remain follow-up.
 - No cron jobs created from missing scripts.
-- Local llama.cpp 9B Q4_K_M direct inference passed.
-- Provider OAuth, real Telegram setup, QMD, and full Tolui/Hermes compatibility remain pending.
+- QMD v2.5.3 Brain indexing/embed/search passed.
+- Local llama.cpp 9B Q4_K_M direct inference and Hermes Tolui one-shot passed at 65,536 context.
+- Telegram runtime dependency and secure pairing preflight passed; the real token and live response remain human-gated.
+- Provider OAuth and real Telegram setup remain pending.

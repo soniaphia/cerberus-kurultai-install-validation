@@ -3,7 +3,8 @@
     "private_index_default_posix": "~/.kublai/brain-index-private/brain.db",
     "public_index_default_posix": "~/.brain-index/brain.db",
     "qmd_commands": [
-      "qmd update -c brain",
+      "qmd collection add \"${BRAIN_ROOT}\" --name brain",
+      "qmd update",
       "qmd embed -c brain"
     ],
     "receipt_required": true,
@@ -11,6 +12,7 @@
       "queue",
       "generated",
       "receipts",
+      "plans",
       "docs/plans",
       "operations",
       "analyses",
@@ -50,8 +52,9 @@
       "version": "Python 3.9.6"
     },
     "qmd": {
-      "available": false,
-      "path": null
+      "available": true,
+      "path": "~/.local/bin/qmd",
+      "version": "qmd 2.5.3"
     }
   },
   "cron": {
@@ -241,6 +244,28 @@
     "ogedei_secret_env": "KURULTAI_OGEDEI_TELEGRAM_BOT_TOKEN",
     "operator_name": "Operator",
     "system_name": "Kurultai"
+  },
+  "local_llm": {
+    "minimum_hermes_context_length": 65536,
+    "owner_profile": "tolui",
+    "preferred_model": "Jackrong/Qwen3.5-9B-DeepSeek-V4-Flash-GGUF",
+    "sixteen_gb_llama_cpp_args": [
+      "--ctx-size",
+      "65536",
+      "--cache-type-k",
+      "q8_0",
+      "--cache-type-v",
+      "q8_0",
+      "--parallel",
+      "1"
+    ],
+    "tool_required_work_allowed_before_explicit_test": false,
+    "verified_scope_before_tool_test": [
+      "lightweight_triage",
+      "summarization",
+      "classification",
+      "receipt_prefilter"
+    ]
   },
   "mode": "doctor",
   "platform": {

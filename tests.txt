@@ -4,9 +4,9 @@ PASS  python3 tests/validate_public_repo.py
       OK: Kurultai public repo validation passed
 
 PASS  python3 -m pytest -q
-      17 passed in 0.45s
+      66 passed in 1.50s
 
-PASS  python3 -m py_compile scripts/install_kurultai.py scripts/bootstrap_kurultai_runtime.py
+PASS  Python compilation for installer, bootstrap, retrieval evaluator, and both manifest exporters
 
 PASS  python3 scripts/install_kurultai.py --doctor
 PASS  python3 scripts/install_kurultai.py --doctor --json
@@ -18,10 +18,10 @@ PASS  Hermes profile roster: 11 Kurultai profiles
 PASS  Native Kanban initialize/create/complete smoke test
 PASS  Brain receipt write and requested directory-tree verification
 PASS  Direct local model inference: TOLUI_LOCAL_SMOKE_OK
+PASS  Hermes Tolui integration at 65,536 context: TOLUI_HERMES_SMOKE_OK
+PASS  QMD collection/index/embed/search: 6 files, 8 vectors, search result returned
+PASS  Telegram dependency and offline adapter/configuration preflight: python-telegram-bot 22.6
 
 PENDING  OpenAI Codex OAuth login (human-gated)
 PENDING  Real Telegram credential and gateway foreground smoke test
-PENDING  QMD installation/indexing
-PENDING  Hermes/Tolui final_response compatibility; direct model inference works
 PENDING  Private/external skill and cron-script reconciliation
-

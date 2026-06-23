@@ -19,7 +19,9 @@ Sanitized validation receipts for a local installation of [Kurultai](https://git
 - Brain Markdown/receipt tree created successfully.
 - Native Hermes Kanban initialized; a harmless create/complete smoke task passed.
 - 71 bundled Hermes skills are installed. Kurultai's private/external skill manifest remains a reconciliation follow-up.
-- llama.cpp and the specified 9B Q4_K_M local model are installed. Direct local inference passed. Tolui is configured for the local endpoint but Hermes response-structure compatibility still needs follow-up before tool-bearing work.
+- llama.cpp and the specified 9B Q4_K_M local model are installed. Direct inference and a Hermes Tolui one-shot both passed at 65,536 context using Q8 KV cache and one server slot on the 16 GB host.
+- QMD v2.5.3 is installed. The `brain` collection contains 6 indexed Markdown files and 8 embedded chunks; a collection-scoped search passed.
+- Hermes's Telegram dependency (`python-telegram-bot` 22.6) is installed and the adapter/configuration preflight passes with secure DM pairing.
 - No cron jobs were created from missing private scripts.
 
 ## Human-gated or pending
@@ -27,9 +29,7 @@ Sanitized validation receipts for a local installation of [Kurultai](https://git
 - OpenAI Codex OAuth/login.
 - Replace the local Telegram placeholders with the real credential, then run gateway setup and foreground smoke tests.
 - A separate Ogedei bot credential, if the operations gateway is wanted.
-- QMD installation and `qmd update -c brain` / `qmd embed -c brain`.
-- Start the local llama.cpp endpoint when Tolui is needed and resolve Hermes `final_response` compatibility.
+- Start the local llama.cpp endpoint with at least 65,536 context when Tolui is needed.
 - Review/install missing private or external Kurultai skills and cron scripts.
 
 No secrets, real tokens, chat IDs, OAuth files, cookies, private Brain contents, Hermes sessions, or runtime databases are included in this repository.
-
