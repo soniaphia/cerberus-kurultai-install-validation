@@ -4,7 +4,7 @@ PASS  python3 tests/validate_public_repo.py
       OK: Kurultai public repo validation passed
 
 PASS  python3 -m pytest -q
-      66 passed in 1.50s
+      67 passed in 3.89s
 
 PASS  Python compilation for installer, bootstrap, retrieval evaluator, and both manifest exporters
 
@@ -22,6 +22,8 @@ PASS  Hermes Tolui integration at 65,536 context: TOLUI_HERMES_SMOKE_OK
 PASS  QMD collection/index/embed/search: 6 files, 8 vectors, search result returned
 PASS  Telegram dependency and offline adapter/configuration preflight: python-telegram-bot 22.6
 PASS  Cerberus Telegram identity validation, polling connection, outbound message, inbound /status, and response
+PASS  Feature audit data validation: 333 unique complete stories, 18 defects, 22 test runs
 
-PENDING  OpenAI Codex OAuth login (human-gated)
+BLOCKED  Canonical XLSX export/render: loader-provided @oai/artifact-tool runtime unavailable
+
 PENDING  Private/external skill and cron-script reconciliation
