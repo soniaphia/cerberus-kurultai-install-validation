@@ -1,0 +1,2085 @@
+{
+  "brain": {
+    "private_index_default_posix": "~/.kublai/brain-index-private/brain.db",
+    "public_index_default_posix": "~/.brain-index/brain.db",
+    "qmd_commands": [
+      "qmd update -c brain",
+      "qmd embed -c brain"
+    ],
+    "receipt_required": true,
+    "required_directories": [
+      "queue",
+      "generated",
+      "receipts",
+      "docs/plans",
+      "operations",
+      "analyses",
+      "content",
+      "content/artifacts",
+      "entities",
+      "projects",
+      "infrastructure",
+      "concepts",
+      "raw/assets"
+    ],
+    "root_default_posix": "~/brain",
+    "root_default_windows": "%USERPROFILE%\\brain"
+  },
+  "commands": {
+    "git": {
+      "available": true,
+      "path": "/usr/bin/git",
+      "version": "git version 2.50.1 (Apple Git-155)"
+    },
+    "hermes": {
+      "available": true,
+      "path": "~/.local/bin/hermes",
+      "version": "Hermes Agent v0.17.0 (2026.6.19) \u00b7 upstream 672ea1f8"
+    },
+    "node": {
+      "available": true,
+      "path": "~/.local/bin/node"
+    },
+    "npm": {
+      "available": true,
+      "path": "~/.local/bin/npm"
+    },
+    "python3": {
+      "available": true,
+      "path": "/usr/bin/python3",
+      "version": "Python 3.9.6"
+    },
+    "qmd": {
+      "available": false,
+      "path": null
+    }
+  },
+  "cron": {
+    "job_count": 86,
+    "missing_script_count": 69,
+    "missing_script_jobs": 69,
+    "missing_script_refs": [
+      "agent_health_report.sh",
+      "agi_caretaker_scorecard.py",
+      "agi_harness_observe_propose_tick.py",
+      "agi_harness_v0_monitor.py",
+      "awm_money_watchdog.py",
+      "batu_grok_x_research_canary.py",
+      "batu_x_bookmark_research_dispatch.py",
+      "batu_x_bookmark_scout.py",
+      "batu_x_signal_research_dispatch.py",
+      "batu_x_watchlist_research_dispatch.py",
+      "batu_x_watchlist_scout.py",
+      "brain_dreamer_frontier_gate.py",
+      "brain_dreamer_run_once.py",
+      "brain_ingest_hourly_gate.py",
+      "brain_sync_canary.py",
+      "brain_sync_drain_silent.py",
+      "buildroom_autonomy_cycle.py",
+      "buildroom_freshness_canary.py",
+      "buildroom_review_gate_monitor.py",
+      "content_daily_morning_context.py",
+      "cron_human_intervention_watchdog.py",
+      "cron_output_retention_cron.py",
+      "cross_device_foundation_canary.py",
+      "daily_token_efficiency_scan.py",
+      "dreamer_kanban_triage.py",
+      "dreamer_learn_rules.py",
+      "dreamer_promote.py",
+      "dreamer_watchdog.py",
+      "fantasy_sumo_live_ingestion_silent.py",
+      "gateway_responsiveness_canary.py",
+      "hermes_atlas_monitor.py",
+      "hermes_quota_daily_check.py",
+      "kaidu_prompt_lab_review.py",
+      "kanban_crash_investigator.py",
+      "kanban_health_monitor_silent.py",
+      "kanban_jam_classifier.py",
+      "kanban_performance_metrics_cron.py",
+      "kurultai_action_yield.py",
+      "kurultai_daily_queue_gate.py",
+      "kurultai_money_attribution.py",
+      "kurultai_research_hourly_urgent_silent.py",
+      "kurultai_signal_feedback.py",
+      "kurultai_signal_intake.py",
+      "kurultai_signal_metrics.py",
+      "kurultai_smoke_triplet.py",
+      "kurultai_terminal_task_notifier.py",
+      "kurultai_vault_canary.sh",
+      "local_model_readiness_probe.py",
+      "money_autonomy_context.py",
+      "money_pr_monitor.py",
+      "objective_runner_tick.py",
+      "ogedei_orchestrator_canary.py",
+      "ogedei_orchestrator_optimizer.py",
+      "operator_x_bookmark_taste_profile.py",
+      "ops_repo_drift_canary.py",
+      "paid_task_watchdog.py",
+      "parse_admin_anomaly_watch.py",
+      "parse_admin_daily_digest.py",
+      "parse_business_state_context.py",
+      "parse_paid_subscription_monitor.py",
+      "parse_production_canary.py",
+      "parse_support_email_monitor.py",
+      "polymarket_weather_labeler_silent.py",
+      "polymarket_weather_paper_scan_silent.py",
+      "research_control_room_cron.py",
+      "research_proposal_compiler_cron.py",
+      "tailnet_health_canary.py",
+      "tmux_session_canary.py",
+      "weather_strategy_lab_context.py"
+    ],
+    "policy": "Do not create cron jobs whose script is absent. Keep them as private-follow-up until the script is supplied locally.",
+    "private_follow_up_job_ids": [
+      "job-002",
+      "job-003",
+      "job-004",
+      "job-005",
+      "job-006",
+      "job-008",
+      "job-009",
+      "job-010",
+      "job-012",
+      "job-014",
+      "job-016",
+      "job-017",
+      "job-020",
+      "job-021",
+      "job-022",
+      "job-025",
+      "job-026",
+      "job-027",
+      "job-028",
+      "job-029",
+      "job-030",
+      "job-031",
+      "job-032",
+      "job-033",
+      "job-034",
+      "job-035",
+      "job-036",
+      "job-037",
+      "job-038",
+      "job-039",
+      "job-040",
+      "job-041",
+      "job-042",
+      "job-043",
+      "job-044",
+      "job-045",
+      "job-046",
+      "job-047",
+      "job-048",
+      "job-049",
+      "job-050",
+      "job-051",
+      "job-052",
+      "job-053",
+      "job-054",
+      "job-055",
+      "job-056",
+      "job-057",
+      "job-058",
+      "job-059",
+      "job-060",
+      "job-061",
+      "job-062",
+      "job-063",
+      "job-064",
+      "job-065",
+      "job-066",
+      "job-067",
+      "job-068",
+      "job-074",
+      "job-078",
+      "job-079",
+      "job-080",
+      "job-081",
+      "job-082",
+      "job-083",
+      "job-084",
+      "job-085",
+      "job-086"
+    ],
+    "restorable_job_count": 17,
+    "restorable_job_ids": [
+      "job-001",
+      "job-007",
+      "job-011",
+      "job-013",
+      "job-015",
+      "job-018",
+      "job-019",
+      "job-023",
+      "job-024",
+      "job-069",
+      "job-070",
+      "job-071",
+      "job-072",
+      "job-073",
+      "job-075",
+      "job-076",
+      "job-077"
+    ],
+    "schema": "kurultai.cron-manifest.v1",
+    "script_ref_count": 69,
+    "will_create_jobs_with_missing_scripts": false
+  },
+  "human_gates": [
+    "BotFather bot tokens",
+    "OAuth/browser login",
+    "payment, DNS, public webhook, or production security-policy changes",
+    "destructive overwrite of existing private Hermes or Brain data"
+  ],
+  "identity": {
+    "chair_bot_display_name": "Kurultai Kublai",
+    "chair_display_name": "Kublai",
+    "chair_profile_id": "kublai",
+    "chair_secret_env": "KURULTAI_KUBLAI_TELEGRAM_BOT_TOKEN",
+    "ogedei_bot_display_name": "Kurultai Ogedei",
+    "ogedei_display_name": "Ogedei",
+    "ogedei_secret_env": "KURULTAI_OGEDEI_TELEGRAM_BOT_TOKEN",
+    "operator_name": "Operator",
+    "system_name": "Kurultai"
+  },
+  "mode": "doctor",
+  "platform": {
+    "machine": "arm64",
+    "python": "3.9.6",
+    "system": "Darwin"
+  },
+  "repo": {
+    "installer": "scripts/install_kurultai.py",
+    "missing_required_files": [],
+    "required_files_present": true,
+    "root": "~/Documents/Codex/2026-06-22/copy-paste-this-to-sophia-you/kurultai"
+  },
+  "schema": "kurultai.installer-doctor.v1",
+  "skills": {
+    "entries": [
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Airtable REST API via curl. Records CRUD, filters, upserts.",
+        "name": "airtable",
+        "path": ".archive/airtable",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Manage Apple Notes via memo CLI: create, search, edit.",
+        "name": "apple-notes",
+        "path": ".archive/apple-notes",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Apple Reminders via remindctl: add, list, complete.",
+        "name": "apple-reminders",
+        "path": ".archive/apple-reminders",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Dark-themed SVG architecture/cloud/infra diagrams as HTML.",
+        "name": "architecture-diagram",
+        "path": ".archive/architecture-diagram",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Search arXiv papers by keyword, author, category, or ID.",
+        "name": "arxiv",
+        "path": ".archive/arxiv",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "ASCII art: pyfiglet, cowsay, boxes, image-to-ascii.",
+        "name": "ascii-art",
+        "path": ".archive/ascii-art",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "ASCII video: convert video/audio to colored ASCII MP4/GIF.",
+        "name": "ascii-video",
+        "path": ".archive/ascii-video",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "",
+        "name": "audiocraft-audio-generation",
+        "path": ".archive/audiocraft-audio-generation",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Infographics: 21 layouts x 21 styles (\u4fe1\u606f\u56fe, \u53ef\u89c6\u5316).",
+        "name": "baoyu-infographic",
+        "path": ".archive/baoyu-infographic",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool.",
+        "name": "blogwatcher",
+        "path": ".archive/blogwatcher",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Audit, optimize, prune, and safely restructure the operator's `~/brain/` Obsidian wiki. Use for scheduled Hermes/Codex/Claude Code brain maintenance, retrieval-quality audits, index reconciliation, stale-page pruning, duplicate detection, canonical-page proposals, and approval-gated restructures.",
+        "name": "brain-optimizer",
+        "path": ".archive/brain-optimizer",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Delegate coding to Claude Code CLI (features, PRs).",
+        "name": "claude-code",
+        "path": ".archive/claude-code",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Design one-off HTML artifacts (landing, deck, prototype).",
+        "name": "claude-design",
+        "path": ".archive/claude-design",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Inspect codebases w/ pygount: LOC, languages, ratios.",
+        "name": "codebase-inspection",
+        "path": ".archive/codebase-inspection",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Delegate coding to OpenAI Codex CLI (features, PRs).",
+        "name": "codex",
+        "path": ".archive/codex",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Author/validate/export Google's DESIGN.md token spec files.",
+        "name": "design-md",
+        "path": ".archive/design-md",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Exploratory QA of web apps: find bugs, evidence, reports.",
+        "name": "dogfood",
+        "path": ".archive/dogfood",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "",
+        "name": "evaluating-llms-harness",
+        "path": ".archive/evaluating-llms-harness",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Hand-drawn Excalidraw JSON diagrams (arch, flow, seq).",
+        "name": "excalidraw",
+        "path": ".archive/excalidraw",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Prepare expense reports from banking/finance systems with strict credential hygiene, hard-private data handling, exports, receipts, and redacted summaries.",
+        "name": "finance-expense-workflows",
+        "path": ".archive/finance-expense-workflows",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Track Apple devices/AirTags via FindMy.app on macOS.",
+        "name": "findmy",
+        "path": ".archive/findmy",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Search/download GIFs from Tenor via curl + jq.",
+        "name": "gif-search",
+        "path": ".archive/gif-search",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login.",
+        "name": "github-auth",
+        "path": ".archive/github-auth",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Review PRs: diffs, inline comments via gh or REST.",
+        "name": "github-code-review",
+        "path": ".archive/github-code-review",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Create, triage, label, assign GitHub issues via gh or REST.",
+        "name": "github-issues",
+        "path": ".archive/github-issues",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "GitHub PR lifecycle: branch, commit, open, CI, merge.",
+        "name": "github-pr-workflow",
+        "path": ".archive/github-pr-workflow",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Clone/create/fork repos; manage remotes, releases.",
+        "name": "github-repo-management",
+        "path": ".archive/github-repo-management",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.",
+        "name": "godmode",
+        "path": ".archive/godmode",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
+        "name": "google-workspace",
+        "path": ".archive/google-workspace",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "HeartMuLa: Suno-like song generation from lyrics + tags.",
+        "name": "heartmula",
+        "path": ".archive/heartmula",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Author in-repo SKILL.md: frontmatter, validator, structure.",
+        "name": "hermes-agent-skill-authoring",
+        "path": ".archive/hermes-agent-skill-authoring",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Himalaya CLI: IMAP/SMTP email from terminal.",
+        "name": "himalaya",
+        "path": ".archive/himalaya",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "HuggingFace hf CLI: search/download/upload models, datasets.",
+        "name": "huggingface-hub",
+        "path": ".archive/huggingface-hub",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "",
+        "name": "humanizer",
+        "path": ".archive/humanizer",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Send and receive iMessages/SMS via the imsg CLI on macOS.",
+        "name": "imessage",
+        "path": ".archive/imessage",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Iterative Python via live Jupyter kernel (hamelnb).",
+        "name": "jupyter-live-kernel",
+        "path": ".archive/jupyter-live-kernel",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Decomposition playbook + anti-temptation rules for an orchestrator profile routing work through Kanban. The \"don't do the work yourself\" rule and the basic lifecycle are auto-injected into every kanban worker's system prompt; this skill is the deeper playbook when you're specifically playing the orchestrator role.",
+        "name": "kanban-orchestrator",
+        "path": ".archive/kanban-orchestrator",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Pitfalls, examples, and edge cases for Hermes Kanban workers. The lifecycle itself is auto-injected into every worker's system prompt as KANBAN_GUIDANCE (from agent/prompt_builder.py); this skill is what you load when you want deeper detail on specific scenarios.",
+        "name": "kanban-worker",
+        "path": ".archive/kanban-worker",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Primary always-on objective. Maintain the Kurultai OpenClaw implementation. Replaces the custom Hermes custodian.",
+        "name": "kurultai-caretaker",
+        "path": ".archive/kurultai-caretaker",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "llama.cpp local GGUF inference + HF Hub model discovery.",
+        "name": "llama-cpp",
+        "path": ".archive/llama-cpp",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Karpathy's LLM Wiki: build/query interlinked markdown KB.",
+        "name": "llm-wiki",
+        "path": ".archive/llm-wiki",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "|",
+        "name": "macos-computer-use",
+        "path": ".archive/macos-computer-use",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Manim CE animations: 3Blue1Brown math/algo videos.",
+        "name": "manim-video",
+        "path": ".archive/manim-video",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Geocode, POIs, routes, timezones via OpenStreetMap/OSRM.",
+        "name": "maps",
+        "path": ".archive/maps",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Edit PDF text/typos/titles via nano-pdf CLI (NL prompts).",
+        "name": "nano-pdf",
+        "path": ".archive/nano-pdf",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "MCP client: connect servers, register tools (stdio/HTTP).",
+        "name": "native-mcp",
+        "path": ".archive/native-mcp",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Debug Node.js via --inspect + Chrome DevTools Protocol CLI.",
+        "name": "node-inspect-debugger",
+        "path": ".archive/node-inspect-debugger",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Notion API + ntn CLI: pages, databases, markdown, Workers.",
+        "name": "notion",
+        "path": ".archive/notion",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "OBLITERATUS: abliterate LLM refusals (diff-in-means).",
+        "name": "obliteratus",
+        "path": ".archive/obliteratus",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Read, search, create, and edit notes in the Obsidian vault.",
+        "name": "obsidian",
+        "path": ".archive/obsidian",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Extract text from PDFs/scans (pymupdf, marker-pdf).",
+        "name": "ocr-and-documents",
+        "path": ".archive/ocr-and-documents",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Delegate coding to OpenCode CLI (features, PR review).",
+        "name": "opencode",
+        "path": ".archive/opencode",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Control Philips Hue lights, scenes, rooms via OpenHue CLI.",
+        "name": "openhue",
+        "path": ".archive/openhue",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "p5.js sketches: gen art, shaders, interactive, 3D.",
+        "name": "p5js",
+        "path": ".archive/p5js",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Plan mode: write an actionable markdown plan to .hermes/plans/, no execution. Bite-sized tasks, exact paths, complete code.",
+        "name": "plan",
+        "path": ".archive/plan",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Query Polymarket: markets, prices, orderbooks, history.",
+        "name": "polymarket",
+        "path": ".archive/polymarket",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.",
+        "name": "popular-web-designs",
+        "path": ".archive/popular-web-designs",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Create, read, edit .pptx decks, slides, notes, templates.",
+        "name": "powerpoint",
+        "path": ".archive/powerpoint",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Use when building creative browser demos with @chenglou/pretext \u2014 DOM-free text layout for ASCII art, typographic flow around obstacles, text-as-geometry games, kinetic typography, and text-powered generative art. Produces single-file HTML demos by default.",
+        "name": "pretext",
+        "path": ".archive/pretext",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Debug Python: pdb REPL + debugpy remote (DAP).",
+        "name": "python-debugpy",
+        "path": ".archive/python-debugpy",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Pre-commit review: security scan, quality gates, auto-fix.",
+        "name": "requesting-code-review",
+        "path": ".archive/requesting-code-review",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Research and advise on buying limited, event, local, or collector merchandise for resale; prioritize official, scarce, low-friction inventory with live market comps.",
+        "name": "resale-arbitrage-research",
+        "path": ".archive/resale-arbitrage-research",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Write ML papers for NeurIPS/ICML/ICLR: design\u2192submit.",
+        "name": "research-paper-writing",
+        "path": ".archive/research-paper-writing",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "",
+        "name": "segment-anything-model",
+        "path": ".archive/segment-anything-model",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "",
+        "name": "serving-llms-vllm",
+        "path": ".archive/serving-llms-vllm",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Throwaway HTML mockups: 2-3 design variants to compare.",
+        "name": "sketch",
+        "path": ".archive/sketch",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Audio spectrograms/features (mel, chroma, MFCC) via CLI.",
+        "name": "songsee",
+        "path": ".archive/songsee",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Songwriting craft and Suno AI music prompts.",
+        "name": "songwriting-and-ai-music",
+        "path": ".archive/songwriting-and-ai-music",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Throwaway experiments to validate an idea before build.",
+        "name": "spike",
+        "path": ".archive/spike",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "4-phase root cause debugging: understand bugs before fixing.",
+        "name": "systematic-debugging",
+        "path": ".archive/systematic-debugging",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Operate the Teams meeting summary pipeline via Hermes CLI \u2014 summarize meetings, inspect pipeline status, replay jobs, manage Microsoft Graph subscriptions.",
+        "name": "teams-meeting-pipeline",
+        "path": ".archive/teams-meeting-pipeline",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Set up and operate phone/SMS/AI voice agent integrations with Twilio, ElevenLabs, Vapi, Bland, and Hermes/Kublai bridge services.",
+        "name": "telephony-voice-agents",
+        "path": ".archive/telephony-voice-agents",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Read-only Tesla Fleet API workflows for OAuth setup, vehicle inventory, and vehicle-data monitoring without control commands or secret exposure.",
+        "name": "tesla-fleet-api",
+        "path": ".archive/tesla-fleet-api",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "TDD: enforce RED-GREEN-REFACTOR, tests before code.",
+        "name": "test-driven-development",
+        "path": ".archive/test-driven-development",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "",
+        "name": "touchdesigner-mcp",
+        "path": ".archive/touchdesigner-mcp",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Webhook subscriptions: event-driven agent runs.",
+        "name": "webhook-subscriptions",
+        "path": ".archive/webhook-subscriptions",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "W&B: log ML experiments, sweeps, model registry, dashboards.",
+        "name": "weights-and-biases",
+        "path": ".archive/weights-and-biases",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "X/Twitter via xurl CLI: post, search, DM, media, v2 API.",
+        "name": "xurl",
+        "path": ".archive/xurl",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "YouTube transcripts to summaries, threads, blogs.",
+        "name": "youtube-content",
+        "path": ".archive/youtube-content",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Yuanbao (\u5143\u5b9d) groups: @mention users, query info/members.",
+        "name": "yuanbao",
+        "path": ".archive/yuanbao",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Operate macOS Apple apps and local desktop automation: Notes, Reminders, Messages/iMessage, Find My, and background Computer Use.",
+        "name": "apple-local-automation",
+        "path": "apple/apple-local-automation",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Route coding work to Claude Code, Codex, OpenCode, or other CLI agents while Hermes orchestrates scope, verification, and handoff.",
+        "name": "autonomous-coding-agents",
+        "path": "autonomous-ai-agents/autonomous-coding-agents",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Compact router for using and extending Hermes Agent \u2014 load when configuring, troubleshooting, developing, or operating Hermes. The full historical reference is preserved in references/full-hermes-agent-reference-2026-05-15.md; load only the focused reference needed for the task. For Bitwarden Secrets Manager setup/free-tier questions, load references/bitwarden-secrets-manager.md; for users who authenticated with normal bw CLI and ask what remains, load references/bitwarden-cli-vs-secrets-manager-2026-05-25.md. For OpenAI Codex auth vs GPT Image 2 / Hermes image_gen confusion, load references/openai-codex-auth-gpt-image2.md. For Objective Runner Telegram `/objective` operations, load references/objective-runner-telegram-operations.md.",
+        "name": "hermes-agent",
+        "path": "autonomous-ai-agents/hermes-agent",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Use when a Hermes Kanban worker wants to run Codex CLI as an isolated implementation lane while Hermes keeps ownership of task lifecycle, reconciliation, testing, and handoff.",
+        "name": "kanban-codex-lane",
+        "path": "autonomous-ai-agents/kanban-codex-lane",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Create executable go-to-market plans with autonomous operating loops, ICP, channels, metrics, and approval gates.",
+        "name": "go-to-market-planning",
+        "path": "business/go-to-market-planning",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Operate Parse as an autonomous admin surface: support intake, account resolution, API keys, entitlements, billing/payment triage, admin receipts, and escalation policy.",
+        "name": "parse-admin-operations",
+        "path": "business/parse-admin-operations",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Produce the operator's detailed morning report on the state of the Parse / parsethis.ai business from live admin, support, billing, product, and operations signals.",
+        "name": "parse-business-state-report",
+        "path": "business/parse-business-state-report",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Attribute Parse subscription tiers to email addresses/users on the operator's command, including custom pricing, $0 grants, and free trial/free-period overrides.",
+        "name": "parse-subscription-attribution",
+        "path": "business/parse-subscription-attribution",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Stripe REST API workflows for customers, payments, subscriptions, refunds, and churn research with strict side-effect gates.",
+        "name": "stripe",
+        "path": "business/stripe",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Article illustrations: type \u00d7 style \u00d7 palette consistency.",
+        "name": "baoyu-article-illustrator",
+        "path": "creative/baoyu-article-illustrator",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Knowledge comics (\u77e5\u8bc6\u6f2b\u753b): educational, biography, tutorial.",
+        "name": "baoyu-comic",
+        "path": "creative/baoyu-comic",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Generate images, video, and audio with ComfyUI \u2014 install, launch, manage nodes/models, run workflows with parameter injection. Uses the official comfy-cli for lifecycle and direct REST/WebSocket API for execution.",
+        "name": "comfyui",
+        "path": "creative/comfyui",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Generate project ideas via creative constraints.",
+        "name": "creative-ideation",
+        "path": "creative/creative-ideation",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Pixel art w/ era palettes (NES, Game Boy, PICO-8).",
+        "name": "pixel-art",
+        "path": "creative/pixel-art",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Create visual artifacts: diagrams, infographics, HTML mockups, p5.js sketches, design-system references, Excalidraw, and design specs.",
+        "name": "visual-artifact-generation",
+        "path": "creative/visual-artifact-generation",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Manage, measure, and reduce Hermes cron job token usage while preserving capability and safety.",
+        "name": "hermes-cron-optimization",
+        "path": "devops/hermes-cron-optimization",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Preserve interrupted, preempted, blocked, or concurrent work by routing it into Hermes Kanban tasks with context, receipts, exact completion reporting, and active blocker resolution.",
+        "name": "kanban-interruption-handoff",
+        "path": "devops/kanban-interruption-handoff",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Use when the operator asks to send an implementation plan, recommendation bundle, or multi-task proposal to Hermes Kanban triage and shepherd it through.",
+        "name": "kanban-plan-shepherding",
+        "path": "devops/kanban-plan-shepherding",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Use when deciding whether work should become a Hermes Kanban task, choosing the right Kurultai assignee, dispatching it, monitoring it to completion, and actively managing blockers or follow-up work.",
+        "name": "kanban-task-lifecycle",
+        "path": "devops/kanban-task-lifecycle",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Webhook subscriptions: event-driven agent runs.",
+        "name": "webhook-subscriptions",
+        "path": "devops/webhook-subscriptions",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Find and verify an x402 payment deposit/payTo address safely, without exposing private keys or secrets.",
+        "name": "x402-payment-address-lookup",
+        "path": "devops/x402-payment-address-lookup",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Host modded Minecraft servers (CurseForge, Modrinth).",
+        "name": "minecraft-modpack-server",
+        "path": "gaming/minecraft-modpack-server",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Play Pokemon via headless emulator + RAM reads.",
+        "name": "pokemon-player",
+        "path": "gaming/pokemon-player",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "End-to-end GitHub work: auth, repository setup, codebase inspection, issues, PR lifecycle, CI, and review via gh/git/API.",
+        "name": "github-workflows",
+        "path": "github/github-workflows",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Save media, documents, screenshots, PDFs, and supporting files into the Brain with privacy routing, manifests, local-only Kanban delegation, indexing policy, and verification.",
+        "name": "brain-media-doc-intake",
+        "path": "kurultai/brain-media-doc-intake",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Report/link intake for brain synthesis and proposal packets.",
+        "name": "brain-report-ingest-propose",
+        "path": "kurultai/brain-report-ingest-propose",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Produce the Brain Vault Loop weekly synthesis layer across daily briefs, Research Control Room outputs, signal metrics, graph/context refreshes, and recent Brain receipts without duplicating daily reports.",
+        "name": "brain-vault-weekly-synthesis",
+        "path": "kurultai/brain-vault-weekly-synthesis",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Router for the operator's Brain wiki operations: context/search, durable writes, ingest, QMD/indexing, privacy boundaries, research capture, curation, and Brain-service maintenance.",
+        "name": "brain-wiki-operations",
+        "path": "kurultai/brain-wiki-operations",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "On-demand reference appendix for brain-wiki-operations: detailed Brain ingest/Dreamer/QMD/Parse-screening runbook pointers. Load only when a specific edge case is needed.",
+        "name": "brain-wiki-references",
+        "path": "kurultai/brain-wiki-references",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Operate and extend Kurultai buildrooms: research-to-buildroom compilation, room validation, operator summaries, Control Room reports, receipts, tests, leakage scans, and PR-safe public artifacts.",
+        "name": "buildroom-operations",
+        "path": "kurultai/buildroom-operations",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Route the operator's Content OS work: inbox processing, connection mining, briefs, drafting, publishing gates, return path, and performance review.",
+        "name": "content-os-workflows",
+        "path": "kurultai/content-os-workflows",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Operate, extend, debug, and deploy the operator's fantasy sumo league site without spoilers",
+        "name": "fantasy-sumo-operations",
+        "path": "kurultai/fantasy-sumo-operations",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": ">",
+        "name": "fantasy-sumo-spoiler-fence",
+        "path": "kurultai/fantasy-sumo-spoiler-fence",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Use for explicit `/improve [target]` commands or explicit deep system-improvement audits of Kurultai/Hermes/Brain/agent operating loops; routes a broad request into live evidence, durable report, prioritized safe actions, and proof metrics. Do not load for casual uses of the word \"improve\" or narrow one-file/PR edits unless framed as a system audit.",
+        "name": "improve",
+        "path": "kurultai/improve",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Monitor Kurultai agent profile health: session activity, error rates, model config, cron status. Cross-profile visibility into all 6 agents.",
+        "name": "kurultai-agent-health",
+        "path": "kurultai/kurultai-agent-health",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Router for current Kurultai/Hermes operations: diagnose live queues, Brain, cron, gateways, profiles, AGI harness, proposals, public rebuilds, and operational substrate while keeping decommissioned OpenClaw/Telegram procedures historical.",
+        "name": "kurultai-operations",
+        "path": "kurultai/kurultai-operations",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Route meaningful Kurultai experience into memory, class-level skills, Brain doctrine, Kanban follow-ups, receipts/regressions/canaries, or explicit no-op rationale without creating dated skill bloat.",
+        "name": "kurultai-retro-learn",
+        "path": "kurultai/kurultai-retro-learn",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Convert broad money-dashboard security/audit bounty signals into concrete public/local research passes with ledger receipts.",
+        "name": "money-security-bounty-triage",
+        "path": "kurultai/money-security-bounty-triage",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Configure, upgrade, and debug OpenClaw/Hermes integration surfaces including Telegram channels, Parse screening cleanup, CLI/gateway upgrades, and imported helper workflows.",
+        "name": "openclaw-operations",
+        "path": "kurultai/openclaw-operations",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Create high-fidelity Hermes persona agents with dedicated Telegram gateways, OpenAI Codex OAuth routing, Brain wiring, profile-local voice skills, Turing-style identity/voice regressions, receipts, and rollback paths \u2014 the Elon-agent pattern generalized.",
+        "name": "persona-agent-gateway-creation",
+        "path": "kurultai/persona-agent-gateway-creation",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Use when the operator asks for reusable or durable research-return workflows: route substantial article/media/social/source research through Batu Kanban by default, verify/synthesize with Kublai, and turn findings into Brain artifacts, proposal dispositions, skills, tasks, reports, or explicit no-ops. Skip for casual one-off factual answers unless they become reusable research workflow work.",
+        "name": "research-return-path",
+        "path": "kurultai/research-return-path",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Workflow for turning high-signal user-requested research into reusable Brain artifacts rather than leaving it only in chat history.",
+        "name": "research-to-brain-compiler",
+        "path": "kurultai/research-to-brain-compiler",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Author, install, consolidate, and propagate agent skills across Hermes, Codex, Claude, OpenClaw, and the brain wiki skill-parity layer.",
+        "name": "skill-library-operations",
+        "path": "kurultai/skill-library-operations",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "MCP client: connect servers, register tools (stdio/HTTP).",
+        "name": "native-mcp",
+        "path": "mcp/native-mcp",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Generate, transform, and analyze media: ASCII art/video, math animations, GIFs, YouTube transcripts, music prompts/generation, and audio features.",
+        "name": "media-generation-and-analysis",
+        "path": "media/media-generation-and-analysis",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Spotify: play, search, queue, manage playlists and devices.",
+        "name": "spotify",
+        "path": "media/spotify",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Outlines: structured JSON/regex/Pydantic LLM generation.",
+        "name": "outlines",
+        "path": "mlops/inference/outlines",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Model operations workflows: Hugging Face Hub, local llama.cpp inference, W&B evaluation/tracking, and model refusal/abliteration experiments.",
+        "name": "mlops-model-workflows",
+        "path": "mlops/mlops-model-workflows",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "DSPy: declarative LM programs, auto-optimize prompts, RAG.",
+        "name": "dspy",
+        "path": "mlops/research/dspy",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Axolotl: YAML LLM fine-tuning (LoRA, DPO, GRPO).",
+        "name": "axolotl",
+        "path": "mlops/training/axolotl",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "TRL: SFT, DPO, PPO, GRPO, reward modeling for LLM RLHF.",
+        "name": "trl-fine-tuning",
+        "path": "mlops/training/trl-fine-tuning",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Unsloth: 2-5x faster LoRA/QLoRA fine-tuning, less VRAM.",
+        "name": "unsloth",
+        "path": "mlops/training/unsloth",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Build an Obsidian + Claude learning vault that turns study material into concept notes, non-obvious connections, active recall, spaced review, and synthesis documents.",
+        "name": "obsidian-claude-learning-vault",
+        "path": "note-taking/obsidian-claude-learning-vault",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Create and maintain Obsidian vault artifacts: CLI operations, Markdown conventions, Bases views, JSON Canvas maps, and clean imported documents.",
+        "name": "obsidian-workflows",
+        "path": "note-taking/obsidian-workflows",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Build, route, and report Kublai/Kurultai task packets optimized for agent-aware execution and completion reporting.",
+        "name": "kublai-task-workflows",
+        "path": "openclaw-imports/kublai-task-workflows",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Use when the operator asks Kublai/Hermes to call a human for a purpose. Build an objective-led call plan before dialing, lead the conversation toward that outcome, collect only consented necessary facts, and close with receipts/follow-ups.",
+        "name": "agent-led-call-planning",
+        "path": "productivity/agent-led-call-planning",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Use when writing copy-pasteable prompts, commands, patches, Markdown, or chat messages that contain code blocks, especially when the output will be pasted into Telegram, Slack, Discord, another LLM, or a terminal. Prevent broken nested fences, mangled Markdown, and ambiguous handoff formatting.",
+        "name": "copy-pasteable-code-blocks",
+        "path": "productivity/copy-pasteable-code-blocks",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Import and process meeting transcripts/notes from Granola and Fathom exports or APIs, then fold into Brain/meeting pipelines.",
+        "name": "granola-fathom",
+        "path": "productivity/granola-fathom",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Linear: manage issues, projects, teams via GraphQL + curl.",
+        "name": "linear",
+        "path": "productivity/linear",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Operate productivity platforms and documents: email, Google Workspace, Airtable, Notion, PDF/OCR, PowerPoint, Teams meeting summaries, maps, and expenses.",
+        "name": "office-and-document-workflows",
+        "path": "productivity/office-and-document-workflows",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Use when the user asks to premortem, stress-test, red-team, de-risk, or future-failure-analyze a plan, decision, launch, hire, partnership, project, commitment, or strategy before execution.",
+        "name": "premortem",
+        "path": "productivity/premortem",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Use when the operator asks to book a Raleigh Sauna House appointment for a given date/time; navigate Boulevard booking, optionally use SMS login code, and stop before final appointment submission for approval.",
+        "name": "raleigh-sauna-house-booking",
+        "path": "productivity/raleigh-sauna-house-booking",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Readwise Reader/highlights API workflows for search, export, and retrieval with safe token handling.",
+        "name": "readwise",
+        "path": "productivity/readwise",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Apify actor/dataset workflows for scraping and market research with cost and side-effect dry-run gates.",
+        "name": "apify",
+        "path": "research/apify",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Operate and evaluate the operator's paper-only Polymarket daily temperature research engine, including simulated portfolio, training export, and goal tuning.",
+        "name": "polymarket-weather-paper-engine",
+        "path": "research/polymarket-weather-paper-engine",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Research discovery and synthesis: arXiv, feeds/blogs, LLM wiki knowledge bases, research-paper writing, market/event research, and prediction-market data.",
+        "name": "research-intelligence-workflows",
+        "path": "research/research-intelligence-workflows",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Operate personal device and smart-home APIs safely: Hue/OpenHue lights and read-only Tesla Fleet vehicle data.",
+        "name": "device-and-home-api-operations",
+        "path": "smart-home/device-and-home-api-operations",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Operate external communication platforms: X/Twitter via xurl, Yuanbao groups, and telephony/SMS/voice-agent integrations.",
+        "name": "communication-platform-workflows",
+        "path": "social-media/communication-platform-workflows",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Reddit public/OAuth research and account workflows via JSON/RSS/API; safe read-first market research.",
+        "name": "reddit",
+        "path": "social-media/reddit",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Optimize X/Twitter content placement in the For You feed based on the open-sourced x-algorithm",
+        "name": "x-content-optimization",
+        "path": "social-media/x-content-optimization",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Use when an agent needs opt-in Browse CLI guidance for local, non-sensitive browser automation reconnaissance after Hermes built-in browser tools are insufficient.",
+        "name": "browse-cli",
+        "path": "software-development/browse-cli",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Direct browser control via CDP connected to the user's real Chrome. Use when the user wants to automate, scrape, test, or interact with web pages. Installed at ~/Developer/browser-harness.",
+        "name": "browser-harness",
+        "path": "software-development/browser-harness",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Use Codex as a bulk coding worker while Hermes acts as reviewer, verifier, and safety gate for multi-phase implementation work. In Kanban contexts, assign the task to a real accountable Kurultai profile (for example Chagatai) and have that profile use this skill; do not assign the task directly to a pseudo-profile named `codex`. See references/kanban-ownership.md.",
+        "name": "codex-implementation-orchestration",
+        "path": "software-development/codex-implementation-orchestration",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Debug Hermes slash commands across Python registry, gateway/Telegram, TUI, and Ink UI.",
+        "name": "debugging-hermes-tui-commands",
+        "path": "software-development/debugging-hermes-tui-commands",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Modify, debug, or extend the s6-overlay supervision tree inside the Hermes Agent Docker image \u2014 adding new services, debugging profile gateways, understanding the Architecture B main-program pattern.",
+        "name": "hermes-s6-container-supervision",
+        "path": "software-development/hermes-s6-container-supervision",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Metadata receipt pattern for Hermes screened tool events.",
+        "name": "parse-screening-recovery",
+        "path": "software-development/parse-screening-recovery",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "'Repository workflow orchestration skill for staged implementation, locked artifacts, late-phase receipts, and durable memory maintenance. Use when executing recursive-mode runs, resuming a run, locking a phase, or verifying locks.'",
+        "name": "recursive-mode",
+        "path": "software-development/recursive-mode",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Write shell commands that don't trip Hermes's own security scanner. Avoid pipe-to-interpreter patterns and inline `-c` script execution when a direct-file read works.",
+        "name": "shell-command-hygiene",
+        "path": "software-development/shell-command-hygiene",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Parallel 3-agent cleanup of recent code changes.",
+        "name": "simplify-code",
+        "path": "software-development/simplify-code",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Class-level software delivery workflow: planning, spikes, TDD, debugging, runtime debuggers, pre-commit review, and verification.",
+        "name": "software-delivery-workflows",
+        "path": "software-development/software-delivery-workflows",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Wire, deploy, and verify live-data ingestion for static/SPAs that consume JSON snapshots or SSE-style live endpoints.",
+        "name": "static-site-live-data-deployment",
+        "path": "software-development/static-site-live-data-deployment",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Execute plans via delegate_task subagents (2-stage review).",
+        "name": "subagent-driven-development",
+        "path": "software-development/subagent-driven-development",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Use when you have a spec or requirements for a multi-step task. Creates comprehensive implementation plans with bite-sized tasks, exact file paths, and complete code examples.",
+        "name": "writing-plans",
+        "path": "software-development/writing-plans",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Switch the Hermes default model/provider configuration safely, with backup, guarded config editing, gateway restart, verification, and optional scheduled revert. No secrets in output.",
+        "name": "hermes-model-switch",
+        "path": "system/hermes-model-switch",
+        "path_present_in_repo": false
+      },
+      {
+        "action": "private_or_external_follow_up",
+        "description": "Operate the meta-harness control plane: curator gate/co-judge behavior, harness controls, read-only evaluation mode, and operator safety boundaries.",
+        "name": "meta-harness-operations",
+        "path": "system/meta-harness-operations",
+        "path_present_in_repo": false
+      }
+    ],
+    "entry_count": 165,
+    "missing": [
+      {
+        "name": "airtable",
+        "path": ".archive/airtable"
+      },
+      {
+        "name": "apple-notes",
+        "path": ".archive/apple-notes"
+      },
+      {
+        "name": "apple-reminders",
+        "path": ".archive/apple-reminders"
+      },
+      {
+        "name": "architecture-diagram",
+        "path": ".archive/architecture-diagram"
+      },
+      {
+        "name": "arxiv",
+        "path": ".archive/arxiv"
+      },
+      {
+        "name": "ascii-art",
+        "path": ".archive/ascii-art"
+      },
+      {
+        "name": "ascii-video",
+        "path": ".archive/ascii-video"
+      },
+      {
+        "name": "audiocraft-audio-generation",
+        "path": ".archive/audiocraft-audio-generation"
+      },
+      {
+        "name": "baoyu-infographic",
+        "path": ".archive/baoyu-infographic"
+      },
+      {
+        "name": "blogwatcher",
+        "path": ".archive/blogwatcher"
+      },
+      {
+        "name": "brain-optimizer",
+        "path": ".archive/brain-optimizer"
+      },
+      {
+        "name": "claude-code",
+        "path": ".archive/claude-code"
+      },
+      {
+        "name": "claude-design",
+        "path": ".archive/claude-design"
+      },
+      {
+        "name": "codebase-inspection",
+        "path": ".archive/codebase-inspection"
+      },
+      {
+        "name": "codex",
+        "path": ".archive/codex"
+      },
+      {
+        "name": "design-md",
+        "path": ".archive/design-md"
+      },
+      {
+        "name": "dogfood",
+        "path": ".archive/dogfood"
+      },
+      {
+        "name": "evaluating-llms-harness",
+        "path": ".archive/evaluating-llms-harness"
+      },
+      {
+        "name": "excalidraw",
+        "path": ".archive/excalidraw"
+      },
+      {
+        "name": "finance-expense-workflows",
+        "path": ".archive/finance-expense-workflows"
+      },
+      {
+        "name": "findmy",
+        "path": ".archive/findmy"
+      },
+      {
+        "name": "gif-search",
+        "path": ".archive/gif-search"
+      },
+      {
+        "name": "github-auth",
+        "path": ".archive/github-auth"
+      },
+      {
+        "name": "github-code-review",
+        "path": ".archive/github-code-review"
+      },
+      {
+        "name": "github-issues",
+        "path": ".archive/github-issues"
+      },
+      {
+        "name": "github-pr-workflow",
+        "path": ".archive/github-pr-workflow"
+      },
+      {
+        "name": "github-repo-management",
+        "path": ".archive/github-repo-management"
+      },
+      {
+        "name": "godmode",
+        "path": ".archive/godmode"
+      },
+      {
+        "name": "google-workspace",
+        "path": ".archive/google-workspace"
+      },
+      {
+        "name": "heartmula",
+        "path": ".archive/heartmula"
+      },
+      {
+        "name": "hermes-agent-skill-authoring",
+        "path": ".archive/hermes-agent-skill-authoring"
+      },
+      {
+        "name": "himalaya",
+        "path": ".archive/himalaya"
+      },
+      {
+        "name": "huggingface-hub",
+        "path": ".archive/huggingface-hub"
+      },
+      {
+        "name": "humanizer",
+        "path": ".archive/humanizer"
+      },
+      {
+        "name": "imessage",
+        "path": ".archive/imessage"
+      },
+      {
+        "name": "jupyter-live-kernel",
+        "path": ".archive/jupyter-live-kernel"
+      },
+      {
+        "name": "kanban-orchestrator",
+        "path": ".archive/kanban-orchestrator"
+      },
+      {
+        "name": "kanban-worker",
+        "path": ".archive/kanban-worker"
+      },
+      {
+        "name": "kurultai-caretaker",
+        "path": ".archive/kurultai-caretaker"
+      },
+      {
+        "name": "llama-cpp",
+        "path": ".archive/llama-cpp"
+      },
+      {
+        "name": "llm-wiki",
+        "path": ".archive/llm-wiki"
+      },
+      {
+        "name": "macos-computer-use",
+        "path": ".archive/macos-computer-use"
+      },
+      {
+        "name": "manim-video",
+        "path": ".archive/manim-video"
+      },
+      {
+        "name": "maps",
+        "path": ".archive/maps"
+      },
+      {
+        "name": "nano-pdf",
+        "path": ".archive/nano-pdf"
+      },
+      {
+        "name": "native-mcp",
+        "path": ".archive/native-mcp"
+      },
+      {
+        "name": "node-inspect-debugger",
+        "path": ".archive/node-inspect-debugger"
+      },
+      {
+        "name": "notion",
+        "path": ".archive/notion"
+      },
+      {
+        "name": "obliteratus",
+        "path": ".archive/obliteratus"
+      },
+      {
+        "name": "obsidian",
+        "path": ".archive/obsidian"
+      },
+      {
+        "name": "ocr-and-documents",
+        "path": ".archive/ocr-and-documents"
+      },
+      {
+        "name": "opencode",
+        "path": ".archive/opencode"
+      },
+      {
+        "name": "openhue",
+        "path": ".archive/openhue"
+      },
+      {
+        "name": "p5js",
+        "path": ".archive/p5js"
+      },
+      {
+        "name": "plan",
+        "path": ".archive/plan"
+      },
+      {
+        "name": "polymarket",
+        "path": ".archive/polymarket"
+      },
+      {
+        "name": "popular-web-designs",
+        "path": ".archive/popular-web-designs"
+      },
+      {
+        "name": "powerpoint",
+        "path": ".archive/powerpoint"
+      },
+      {
+        "name": "pretext",
+        "path": ".archive/pretext"
+      },
+      {
+        "name": "python-debugpy",
+        "path": ".archive/python-debugpy"
+      },
+      {
+        "name": "requesting-code-review",
+        "path": ".archive/requesting-code-review"
+      },
+      {
+        "name": "resale-arbitrage-research",
+        "path": ".archive/resale-arbitrage-research"
+      },
+      {
+        "name": "research-paper-writing",
+        "path": ".archive/research-paper-writing"
+      },
+      {
+        "name": "segment-anything-model",
+        "path": ".archive/segment-anything-model"
+      },
+      {
+        "name": "serving-llms-vllm",
+        "path": ".archive/serving-llms-vllm"
+      },
+      {
+        "name": "sketch",
+        "path": ".archive/sketch"
+      },
+      {
+        "name": "songsee",
+        "path": ".archive/songsee"
+      },
+      {
+        "name": "songwriting-and-ai-music",
+        "path": ".archive/songwriting-and-ai-music"
+      },
+      {
+        "name": "spike",
+        "path": ".archive/spike"
+      },
+      {
+        "name": "systematic-debugging",
+        "path": ".archive/systematic-debugging"
+      },
+      {
+        "name": "teams-meeting-pipeline",
+        "path": ".archive/teams-meeting-pipeline"
+      },
+      {
+        "name": "telephony-voice-agents",
+        "path": ".archive/telephony-voice-agents"
+      },
+      {
+        "name": "tesla-fleet-api",
+        "path": ".archive/tesla-fleet-api"
+      },
+      {
+        "name": "test-driven-development",
+        "path": ".archive/test-driven-development"
+      },
+      {
+        "name": "touchdesigner-mcp",
+        "path": ".archive/touchdesigner-mcp"
+      },
+      {
+        "name": "webhook-subscriptions",
+        "path": ".archive/webhook-subscriptions"
+      },
+      {
+        "name": "weights-and-biases",
+        "path": ".archive/weights-and-biases"
+      },
+      {
+        "name": "xurl",
+        "path": ".archive/xurl"
+      },
+      {
+        "name": "youtube-content",
+        "path": ".archive/youtube-content"
+      },
+      {
+        "name": "yuanbao",
+        "path": ".archive/yuanbao"
+      },
+      {
+        "name": "apple-local-automation",
+        "path": "apple/apple-local-automation"
+      },
+      {
+        "name": "autonomous-coding-agents",
+        "path": "autonomous-ai-agents/autonomous-coding-agents"
+      },
+      {
+        "name": "hermes-agent",
+        "path": "autonomous-ai-agents/hermes-agent"
+      },
+      {
+        "name": "kanban-codex-lane",
+        "path": "autonomous-ai-agents/kanban-codex-lane"
+      },
+      {
+        "name": "go-to-market-planning",
+        "path": "business/go-to-market-planning"
+      },
+      {
+        "name": "parse-admin-operations",
+        "path": "business/parse-admin-operations"
+      },
+      {
+        "name": "parse-business-state-report",
+        "path": "business/parse-business-state-report"
+      },
+      {
+        "name": "parse-subscription-attribution",
+        "path": "business/parse-subscription-attribution"
+      },
+      {
+        "name": "stripe",
+        "path": "business/stripe"
+      },
+      {
+        "name": "baoyu-article-illustrator",
+        "path": "creative/baoyu-article-illustrator"
+      },
+      {
+        "name": "baoyu-comic",
+        "path": "creative/baoyu-comic"
+      },
+      {
+        "name": "comfyui",
+        "path": "creative/comfyui"
+      },
+      {
+        "name": "creative-ideation",
+        "path": "creative/creative-ideation"
+      },
+      {
+        "name": "pixel-art",
+        "path": "creative/pixel-art"
+      },
+      {
+        "name": "visual-artifact-generation",
+        "path": "creative/visual-artifact-generation"
+      },
+      {
+        "name": "hermes-cron-optimization",
+        "path": "devops/hermes-cron-optimization"
+      },
+      {
+        "name": "kanban-interruption-handoff",
+        "path": "devops/kanban-interruption-handoff"
+      },
+      {
+        "name": "kanban-plan-shepherding",
+        "path": "devops/kanban-plan-shepherding"
+      },
+      {
+        "name": "kanban-task-lifecycle",
+        "path": "devops/kanban-task-lifecycle"
+      },
+      {
+        "name": "webhook-subscriptions",
+        "path": "devops/webhook-subscriptions"
+      },
+      {
+        "name": "x402-payment-address-lookup",
+        "path": "devops/x402-payment-address-lookup"
+      },
+      {
+        "name": "minecraft-modpack-server",
+        "path": "gaming/minecraft-modpack-server"
+      },
+      {
+        "name": "pokemon-player",
+        "path": "gaming/pokemon-player"
+      },
+      {
+        "name": "github-workflows",
+        "path": "github/github-workflows"
+      },
+      {
+        "name": "brain-media-doc-intake",
+        "path": "kurultai/brain-media-doc-intake"
+      },
+      {
+        "name": "brain-report-ingest-propose",
+        "path": "kurultai/brain-report-ingest-propose"
+      },
+      {
+        "name": "brain-vault-weekly-synthesis",
+        "path": "kurultai/brain-vault-weekly-synthesis"
+      },
+      {
+        "name": "brain-wiki-operations",
+        "path": "kurultai/brain-wiki-operations"
+      },
+      {
+        "name": "brain-wiki-references",
+        "path": "kurultai/brain-wiki-references"
+      },
+      {
+        "name": "buildroom-operations",
+        "path": "kurultai/buildroom-operations"
+      },
+      {
+        "name": "content-os-workflows",
+        "path": "kurultai/content-os-workflows"
+      },
+      {
+        "name": "fantasy-sumo-operations",
+        "path": "kurultai/fantasy-sumo-operations"
+      },
+      {
+        "name": "fantasy-sumo-spoiler-fence",
+        "path": "kurultai/fantasy-sumo-spoiler-fence"
+      },
+      {
+        "name": "improve",
+        "path": "kurultai/improve"
+      },
+      {
+        "name": "kurultai-agent-health",
+        "path": "kurultai/kurultai-agent-health"
+      },
+      {
+        "name": "kurultai-operations",
+        "path": "kurultai/kurultai-operations"
+      },
+      {
+        "name": "kurultai-retro-learn",
+        "path": "kurultai/kurultai-retro-learn"
+      },
+      {
+        "name": "money-security-bounty-triage",
+        "path": "kurultai/money-security-bounty-triage"
+      },
+      {
+        "name": "openclaw-operations",
+        "path": "kurultai/openclaw-operations"
+      },
+      {
+        "name": "persona-agent-gateway-creation",
+        "path": "kurultai/persona-agent-gateway-creation"
+      },
+      {
+        "name": "research-return-path",
+        "path": "kurultai/research-return-path"
+      },
+      {
+        "name": "research-to-brain-compiler",
+        "path": "kurultai/research-to-brain-compiler"
+      },
+      {
+        "name": "skill-library-operations",
+        "path": "kurultai/skill-library-operations"
+      },
+      {
+        "name": "native-mcp",
+        "path": "mcp/native-mcp"
+      },
+      {
+        "name": "media-generation-and-analysis",
+        "path": "media/media-generation-and-analysis"
+      },
+      {
+        "name": "spotify",
+        "path": "media/spotify"
+      },
+      {
+        "name": "outlines",
+        "path": "mlops/inference/outlines"
+      },
+      {
+        "name": "mlops-model-workflows",
+        "path": "mlops/mlops-model-workflows"
+      },
+      {
+        "name": "dspy",
+        "path": "mlops/research/dspy"
+      },
+      {
+        "name": "axolotl",
+        "path": "mlops/training/axolotl"
+      },
+      {
+        "name": "trl-fine-tuning",
+        "path": "mlops/training/trl-fine-tuning"
+      },
+      {
+        "name": "unsloth",
+        "path": "mlops/training/unsloth"
+      },
+      {
+        "name": "obsidian-claude-learning-vault",
+        "path": "note-taking/obsidian-claude-learning-vault"
+      },
+      {
+        "name": "obsidian-workflows",
+        "path": "note-taking/obsidian-workflows"
+      },
+      {
+        "name": "kublai-task-workflows",
+        "path": "openclaw-imports/kublai-task-workflows"
+      },
+      {
+        "name": "agent-led-call-planning",
+        "path": "productivity/agent-led-call-planning"
+      },
+      {
+        "name": "copy-pasteable-code-blocks",
+        "path": "productivity/copy-pasteable-code-blocks"
+      },
+      {
+        "name": "granola-fathom",
+        "path": "productivity/granola-fathom"
+      },
+      {
+        "name": "linear",
+        "path": "productivity/linear"
+      },
+      {
+        "name": "office-and-document-workflows",
+        "path": "productivity/office-and-document-workflows"
+      },
+      {
+        "name": "premortem",
+        "path": "productivity/premortem"
+      },
+      {
+        "name": "raleigh-sauna-house-booking",
+        "path": "productivity/raleigh-sauna-house-booking"
+      },
+      {
+        "name": "readwise",
+        "path": "productivity/readwise"
+      },
+      {
+        "name": "apify",
+        "path": "research/apify"
+      },
+      {
+        "name": "polymarket-weather-paper-engine",
+        "path": "research/polymarket-weather-paper-engine"
+      },
+      {
+        "name": "research-intelligence-workflows",
+        "path": "research/research-intelligence-workflows"
+      },
+      {
+        "name": "device-and-home-api-operations",
+        "path": "smart-home/device-and-home-api-operations"
+      },
+      {
+        "name": "communication-platform-workflows",
+        "path": "social-media/communication-platform-workflows"
+      },
+      {
+        "name": "reddit",
+        "path": "social-media/reddit"
+      },
+      {
+        "name": "x-content-optimization",
+        "path": "social-media/x-content-optimization"
+      },
+      {
+        "name": "browse-cli",
+        "path": "software-development/browse-cli"
+      },
+      {
+        "name": "browser-harness",
+        "path": "software-development/browser-harness"
+      },
+      {
+        "name": "codex-implementation-orchestration",
+        "path": "software-development/codex-implementation-orchestration"
+      },
+      {
+        "name": "debugging-hermes-tui-commands",
+        "path": "software-development/debugging-hermes-tui-commands"
+      },
+      {
+        "name": "hermes-s6-container-supervision",
+        "path": "software-development/hermes-s6-container-supervision"
+      },
+      {
+        "name": "parse-screening-recovery",
+        "path": "software-development/parse-screening-recovery"
+      },
+      {
+        "name": "recursive-mode",
+        "path": "software-development/recursive-mode"
+      },
+      {
+        "name": "shell-command-hygiene",
+        "path": "software-development/shell-command-hygiene"
+      },
+      {
+        "name": "simplify-code",
+        "path": "software-development/simplify-code"
+      },
+      {
+        "name": "software-delivery-workflows",
+        "path": "software-development/software-delivery-workflows"
+      },
+      {
+        "name": "static-site-live-data-deployment",
+        "path": "software-development/static-site-live-data-deployment"
+      },
+      {
+        "name": "subagent-driven-development",
+        "path": "software-development/subagent-driven-development"
+      },
+      {
+        "name": "writing-plans",
+        "path": "software-development/writing-plans"
+      },
+      {
+        "name": "hermes-model-switch",
+        "path": "system/hermes-model-switch"
+      },
+      {
+        "name": "meta-harness-operations",
+        "path": "system/meta-harness-operations"
+      }
+    ],
+    "missing_path_entries": 165,
+    "policy": "Install public-present skills, then list absent/private/external skills as follow-up instead of pretending they were restored.",
+    "present_path_entries": 0,
+    "schema": "kurultai.skills-reconciliation.v1",
+    "will_silently_skip_missing_skills": false
+  }
+}

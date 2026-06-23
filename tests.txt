@@ -1,0 +1,27 @@
+Kurultai validation summary — 2026-06-22
+
+PASS  python3 tests/validate_public_repo.py
+      OK: Kurultai public repo validation passed
+
+PASS  python3 -m pytest -q
+      17 passed in 0.45s
+
+PASS  python3 -m py_compile scripts/install_kurultai.py scripts/bootstrap_kurultai_runtime.py
+
+PASS  python3 scripts/install_kurultai.py --doctor
+PASS  python3 scripts/install_kurultai.py --doctor --json
+PASS  Cerberus personalized dry run
+PASS  Cerberus apply scaffold
+
+PASS  Hermes v0.17.0 installation and config schema v30 migration
+PASS  Hermes profile roster: 11 Kurultai profiles
+PASS  Native Kanban initialize/create/complete smoke test
+PASS  Brain receipt write and requested directory-tree verification
+PASS  Direct local model inference: TOLUI_LOCAL_SMOKE_OK
+
+PENDING  OpenAI Codex OAuth login (human-gated)
+PENDING  Real Telegram credential and gateway foreground smoke test
+PENDING  QMD installation/indexing
+PENDING  Hermes/Tolui final_response compatibility; direct model inference works
+PENDING  Private/external skill and cron-script reconciliation
+

@@ -1,0 +1,21 @@
+Kurultai installer apply
+System: Sophia Kurultai
+Operator: Sophia
+Main chair: Cerberus (profile kublai)
+Main chair bot: Cerberus Bot
+Brain root: ~/brain
+Staging: ~/.kurultai-install/staging
+Cron: 86 jobs, 69 blocked by missing cron scripts
+Skills: 165 entries, 165 missing skill paths
+Jobs with missing scripts and skills with missing paths are recorded as follow-up, not silently installed.
+Scaffold written. Review INSTALL-NEXT-STEPS.md and local receipts before adding secrets.
+
+Post-apply verification:
+- Hermes Agent v0.17.0 installed and config migrated to schema v30.
+- Eleven Kurultai profiles created; internal chair profile remains kublai.
+- Brain tree created at ~/brain, including requested top-level plans/.
+- Native Kanban create/complete smoke test passed.
+- 71 bundled skills installed; missing Kurultai private/external skills remain follow-up.
+- No cron jobs created from missing scripts.
+- Local llama.cpp 9B Q4_K_M direct inference passed.
+- Provider OAuth, real Telegram setup, QMD, and full Tolui/Hermes compatibility remain pending.

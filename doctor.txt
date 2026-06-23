@@ -1,0 +1,11 @@
+Kurultai installer doctor
+System: Kurultai
+Operator: Operator
+Main chair: Kublai (profile kublai)
+Main chair bot: Kurultai Kublai
+Brain root: ~/brain
+Staging: ~/.kurultai-install/staging
+Cron: 86 jobs, 69 blocked by missing cron scripts
+Skills: 165 entries, 165 missing skill paths
+Jobs with missing scripts and skills with missing paths are recorded as follow-up, not silently installed.
+Dry run only; no files were written.
