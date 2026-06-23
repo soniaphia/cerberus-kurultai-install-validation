@@ -21,7 +21,7 @@ PASS  Direct local model inference: TOLUI_LOCAL_SMOKE_OK
 PASS  Hermes Tolui integration at 65,536 context: TOLUI_HERMES_SMOKE_OK
 PASS  QMD collection/index/embed/search: 6 files, 8 vectors, search result returned
 PASS  Telegram dependency and offline adapter/configuration preflight: python-telegram-bot 22.6
+PASS  Cerberus Telegram identity validation, polling connection, outbound message, inbound /status, and response
 
 PENDING  OpenAI Codex OAuth login (human-gated)
-PENDING  Real Telegram credential and gateway foreground smoke test
 PENDING  Private/external skill and cron-script reconciliation

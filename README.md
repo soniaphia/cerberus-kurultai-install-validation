@@ -22,13 +22,14 @@ Sanitized validation receipts for a local installation of [Kurultai](https://git
 - llama.cpp and the specified 9B Q4_K_M local model are installed. Direct inference and a Hermes Tolui one-shot both passed at 65,536 context using Q8 KV cache and one server slot on the 16 GB host.
 - QMD v2.5.3 is installed. The `brain` collection contains 6 indexed Markdown files and 8 embedded chunks; a collection-scoped search passed.
 - Hermes's Telegram dependency (`python-telegram-bot` 22.6) is installed and the adapter/configuration preflight passes with secure DM pairing.
+- The Cerberus gateway is installed as a macOS LaunchAgent and connected to Telegram in polling mode. Bot identity validation, an outbound smoke message, and an allowlisted inbound `/status` response all passed.
 - No cron jobs were created from missing private scripts.
 
 ## Human-gated or pending
 
 - OpenAI Codex OAuth/login.
-- Replace the local Telegram placeholders with the real credential, then run gateway setup and foreground smoke tests.
 - A separate Ogedei bot credential, if the operations gateway is wanted.
+- Rotate the Cerberus credential because it was shared through a chat channel, then update the private profile-local Hermes configuration.
 - Start the local llama.cpp endpoint with at least 65,536 context when Tolui is needed.
 - Review/install missing private or external Kurultai skills and cron scripts.
 

@@ -19,5 +19,6 @@ Post-apply verification:
 - No cron jobs created from missing scripts.
 - QMD v2.5.3 Brain indexing/embed/search passed.
 - Local llama.cpp 9B Q4_K_M direct inference and Hermes Tolui one-shot passed at 65,536 context.
-- Telegram runtime dependency and secure pairing preflight passed; the real token and live response remain human-gated.
-- Provider OAuth and real Telegram setup remain pending.
+- Cerberus Telegram identity, polling connection, outbound delivery, allowlisted inbound `/status`, and response passed.
+- OpenAI Codex authentication is active for the Cerberus profile.
+- The Cerberus credential should be rotated because it was shared through a chat channel; the replacement belongs only in private profile-local configuration.
