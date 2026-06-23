@@ -19,6 +19,7 @@ PASS  Native Kanban initialize/create/complete smoke test
 PASS  Brain receipt write and requested directory-tree verification
 PASS  Direct local model inference: TOLUI_LOCAL_SMOKE_OK
 PASS  Hermes Tolui integration at 65,536 context: TOLUI_HERMES_SMOKE_OK
+PASS  Cerberus automatic rate-limit fallback to the launchd-managed Tolui endpoint: CERBERUS_FALLBACK_OK
 PASS  QMD collection/index/embed/search: 6 files, 8 vectors, search result returned
 PASS  Telegram dependency and offline adapter/configuration preflight: python-telegram-bot 22.6
 PASS  Cerberus Telegram identity validation, polling connection, outbound message, inbound /status, and response

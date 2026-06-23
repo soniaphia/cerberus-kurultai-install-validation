@@ -19,6 +19,7 @@ Post-apply verification:
 - No cron jobs created from missing scripts.
 - QMD v2.5.3 Brain indexing/embed/search passed.
 - Local llama.cpp 9B Q4_K_M direct inference and Hermes Tolui one-shot passed at 65,536 context.
+- The Tolui endpoint is launchd-managed and passed as Cerberus's automatic rate-limit fallback.
 - Cerberus Telegram identity, polling connection, outbound delivery, allowlisted inbound `/status`, and response passed.
 - OpenAI Codex authentication is active for the Cerberus profile.
 - The Cerberus credential should be rotated because it was shared through a chat channel; the replacement belongs only in private profile-local configuration.
